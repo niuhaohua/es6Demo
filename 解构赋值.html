@@ -1,0 +1,22 @@
+<script>
+    /*
+    数组模型的解构
+    */
+    let [a, b, c] = [1, 2, 3]
+    console.log(a, b, c)
+    /*
+    可嵌套
+    */
+    let [d, [
+        [e], f
+    ]] = [1, [
+        [2], 3
+    ]]
+    console.log(d, e, f)
+
+    /*
+    可忽略
+    */
+   let [g, ,h,...k] = [4,2,6,7]
+   console.log(g,h,k)
+</script>

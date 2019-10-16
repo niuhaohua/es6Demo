@@ -1,0 +1,47 @@
+<script>
+    //es6新增了字符串遍历接口，可以使用for...of循环遍历
+    let str = '刷卡缴费卡积分雷声大'
+    for (let i of str) {
+        console.log(i)
+    }
+    /*
+    模板字符串是增强版的字符串，用反引号标识，它可以当作普通字符串使用，也可以用来定义多行字符串，或者在字符串中嵌入变量
+    */
+    //普通字符串
+    let str1 = `点击返回开始就 开始放假看李开复三老婆发送卡配【配 复赛`
+    console.log(str1)
+    //多行字符串
+    let str2 = `ldgl;skkl;dl;gk
+podgfk
+p[df
+开发环境客
+户可视对讲
+ldgdsl
+] getApp();
+`
+    console.log(str2)
+    //拼接字符串
+    let name = 'jason'
+    let age = '18'
+    let obj = {
+        height: `180cm`,
+        weight: `70kg`
+    }
+    let str3 = `姓名：${name},年龄：${age}
+体重：${obj.weight}
+身高：${obj.height}`
+    console.log(str3)
+
+
+
+    /*字符串新增方法*/
+    let inld = str1.includes(`放假`,0) //返回布尔值，表示是否找到了参数字符串，第二个参数表示开始搜索的位置
+    let sw = str1.startsWith('点击',0) //返回布尔值，表示参数字符串是否在原字符串的头部，第二个参数表示开始搜索的位置
+    let ew = str1.endsWith('复赛',0) //返回布尔值，表示参数字符串是都在原字符串尾部，第二个参数表示前n个字符是不是以第一个参数结尾
+    console.log(inld,sw,ew)
+
+    let rp = str.repeat(6)//返回一个新字符串，表示将原字符串重复n次,小数会被向下取整，NaN视同为0
+    console.log(rp)
+
+
+</script>
